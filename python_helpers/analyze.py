@@ -2,7 +2,7 @@ import argparse
 import numpy as np
 
 '''
-Prints information about frame times from input file.
+Prints information about frame times from input data file.
 The frame times are assumed to be in milliseconds and separated by newlines.
 '''
 
