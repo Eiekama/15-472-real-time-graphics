@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>15-472-s26: A3 - Lights</title>
+<style>
+/* feel free to style your report in a fancier way! */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&Anonymous+Pro&display=swap');
+
+html {
+	background:#505055;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	color:#000;
+	background:#eeeee8;
+	font-size:15px;
+	margin: 1em auto 50vh auto;
+	padding: 1em 2em 1em 2em;
+	max-width:45em;
+	border-radius:4px;
+	box-shadow:0 0 10px #0008;
+}
+
+h1 { font-size: 20px; font-weight: 700; }
+h2 { font-size: 16px; font-weight: 700; }
+h3 { font-size: 16px; font-weight: 400; }
+h4 { font-size: 15px; font-weight: 400; }
+
+h1, h2, h3, h4 {
+	margin: 15px 0 0 -10px;
+}
+
+p {
+	margin: 5px 0 0 0;
+}
+
+figure {
+	margin: 10px -2em;
+	padding: 10px 2em;
+	width:100%;
+	background:#e8e8e8;
+}
+
+figcaption {
+	font-size:14px;
+	font-style:italic;
+}
+
+.subtitle {
+	display:block;
+	font-size:16px;
+	font-weight:400;
+}
+
+.placeholder {
+	color:#800;
+	font-style:italic;
+}
+
+kbd {
+	display:inline-block;
+	background:#ccc;
+	color:#444;
+	font-style:normal;
+	font-weight:700;
+	border-radius:8px;
+	padding:1px 6px;
+	margin:1px;
+	border:1.5px solid #aaa;
+}
+
+code {
+	font-family: 'Anonymous Pro', monospace;
+	background: #222;
+	color:#fff;
+	border-radius:4px;
+	padding:2px 4px;
+	margin:1px;
+}
+
+code var {
+	color:#ef5;
+	font-style:italic;
+}
+
+.atag {
+	font-family: 'Calistoga', serif;
+	font-size:90%;
+	color:#000;
+	background:#e17dcd;
+
+	display:inline-block;
+	padding:1px 4px;
+	border-radius: 4px;
+	line-height:120%;
+}
+.atag:before {
+	content:'»';
+}
+.atag.extra {
+	background:#c6aff8;
+}
+.atag.creative {
+	background:linear-gradient(0.35turn, #fcacff, #f9ab93, #76a1e4, #20953d);
+}
+
+.container {
+  display: flex;
+  /* height: 300px; */
+  gap: 10px; /* Space between images */
+}
+
+</style>
+<!-- Load Chart.js for creating charts (documentation https://www.chartjs.org/docs/latest/ ) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>A3: Lights
+<span class="subtitle">by Jingxuan Chen (jingxua4)</span></span>
+</h1>
+
+<p>
+    For implementing lights, I decided to pass the information of each type of light as storage buffers
+    to the shaders with minimal processing on the CPU, and did most of the work in the shader.
+    I generated shadow maps for spot lights by running depth-only render passes from the perspective of each light,
+    which created depth maps that I can then pass to the main render pass to sample when rendering shadows.
+</p>
+<p>
+    For now I'll skip the creative task, but I'll probably come back and get it done later.
+</p>
+
+<h2>My Lit Scene <span class="atag creative">A3-create</span></h2>
+
+<p class="placeholder">
+Describe the scene you lit, the light count and placement approach, and include a screen recording showing it running in real-time:
+</p>
+
+<video>
+<!--
+  you can use the 'video' element to show your code running
+  Learn more at:
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+
+  Example: put the video file in a path near this .html
+  <source src="path/to/video" type="video/mp4" />
+-->
+</video>
+
+<p class="placeholder">
+Credit + cite your sources for textures and models, if you did not create them yourself.
+</p>
+
+<h3>Command-line Arguments (Viewer)</h3>
+
+<p>
+    There has been no changes from A2 for command-line arguments  
+    
+<ul>
+<li>
+	<code>--scene <var>scene.s72</var></code> <accent>-- required --</accent>
+	load scene from <code><var>scene.s72</var></code>
+</li>
+<li>
+	<code>--camera <var>camera_name</var></code> <accent>-- optional --</accent>
+	starts viewing with the scene camera named <code><var>camera_name</var></code>. 
+	Starts with the first scene camera loaded in code (or the user camera if there are no scene cameras) by default.
+</li>
+<li>
+    <code>--exposure <var>value</var></code> <accent>-- optional --</accent>
+    set exposure to <code><var>value</var></code>. 0.0 by default.
+</li>
+<li>
+    <code>--tone-map <var>linear|aces</var></code> <accent>-- optional --</accent>
+    set tone mapping operator. <code><var>linear</var></code> by default.
+</li>
+<li>
+	<code>--culling <var>none|frustum</var></code> <accent>-- optional --</accent>
+	toggles culling. <code><var>none</var></code> by default.
+</li>
+<li>
+	<code>--physical-device <var>device_name</var></code> <accent>-- optional --</accent>
+	runs the viewer on the named physical device and aborts if the device is not found.
+	The viewer guesses the best physical device to use among those available by default.
+</li>
+<li>
+	<code>--drawing-size <var>w h</var></code> <accent>-- optional --</accent>
+	sets the initial size of the drawable part of the window in physical pixels.
+</li>
+<li>
+	<code>--headless</code> <accent>-- optional --</accent>
+	does not create a window and instead renders to an off-screen buffer; reads events from stdin.
+	Current available events are as follows:
+	<ul>
+		<li><code>AVAILABLE <var>dt</var> <var>frame.ppm</var></code> steps the viewer by given <code><var>dt</var></code> and renders one frame.
+			If <code><var>frame.ppm</var></code> is provided, the viewer also saves the rendered frame to <code><var>frame.ppm</var></code>.
+		</li>
+	</ul>
+</li>
+<li>
+    <code>--timer <var>file</var></code> <accent>-- optional --</accent>
+    appends frame times to <code><var>file</var></code>.
+</li>
+</ul>
+
+</p>
+
+<h2>Evidence</h2>
+
+<!-- <p class="placeholder">
+The purpose of this section is to get you to think critically about your code by providing evidence sufficient to demonstrate to course staff that it works.
+These thoughts may also help you improve the code as you work on it in the Final project and beyond.
+</p> -->
+
+<h3>Loading light objects <span class="atag">A3-load</span></h3> 
+
+<p>
+At a high level, data from <code>"LIGHT"</code>s stored in an s72 file are mostly passed directly to
+the in-memory representation used by the renderer, though the power and tint attributes were premultiplied.
+Information like light position and/or direction were also computed during node traversal and passed to the shader.
+
+<!-- Cover, at least:
+how data moves from <code>"LIGHT"</code>s stored in an s72 file to the in-memory representation used by your renderer;
+did you decide to premultiply the power and tint attributes or leave them separate? -->
+</p>
+<p>
+    The light data are stored in CPU-side objects that are first created on viewer construction within the scope
+    labelled <code>// light information</code> within <code>SceneViewer::precompute_scene</code>, and their
+    information is updated every frame within <code>SceneViewer::traverse_scene_graph</code> that is called within
+    <code>SceneViewer::update</code>. The light data is then copied into their corresponding descriptor sets
+    every frame within <code>SceneViewer::render</code>
+</p>
+
+
+<h3>Adding Direct Lighting to Materials <span class="atag">A3-materials</span></h3>
+
+<p>
+    Within <code>objects.frag</code>, light information is received as a single descriptor set containing 3 storage buffers for
+    sun, spot, and sphere lights respectively. Each light type has a different structure that stores their relevant information,
+    and the shader loops through every light of each type to compute the contribution of that light to the final color of the pixel.
+</p>
+
+<h4>Evidence of Proper Lighting Behavior</h4>
+
+<figure>
+	<div class="container">
+		<img src="images/pbr-viewer.png" style="display:block; width: auto; height: 100%; object-fit: contain; max-width:300px; margin:0 auto; background:#fff;">
+		<img src="images/pbr-blender.png" style="display:block; width: auto; height: 100%; object-fit: contain; max-width:300px; margin:0 auto; background:#fff;">
+	</div>
+<figcaption>
+    Render of PBR materials with varying smoothness and metallic parameters under a mix of sun, spot, and sphere lights.
+    This custom scene that I made is included in the submission as <code>light-test.s72</code><br>
+    Left: My viewer render. Right: Blender viewport rendering.
+</figcaption>
+</figure>
+
+<figure>
+    <video autoplay loop width="100%">
+<source src="videos/light-parameters.mp4" type="video/mp4" />
+</video>
+<figcaption>
+    View from all scene cameras in <code>lights-Parameters.s72</code>
+</figcaption>
+</figure>
+
+<h4>Performance Impact of Additional Lights</h4>
+
+<p class="placeholder">
+Include a graph showing the performance impact of adding additional lights to a test scene.
+Document how you made the scene and what kind of lights and camera positioning you used.
+(Disable shadows for this test.)
+We would theoretically expect a linear increase in computing time; is this borne out in practice?
+How many lights can your viewer handle at a reasonable frame rate?
+</p>
+
+<figure>
+<!-- Feel free to use and duplicate the below example graph to plot data
+ 	 Edit labels and variables in script below the canvas -->
+<canvas id="A3-light-perf" style="display:block; width:100%; max-width:600px; margin:0 auto; background:#fff;"></canvas>
+<figcaption>
+The performance of my materials on a given number of lights.
+The result of (my tone-mapping curve) applied to a color of increasing intensity.
+</figcaption>
+</figure>
+<script>
+//adding an event listener so that this chart gets made *after* the document loads:
+window.addEventListener('load', () => {
+	const lights     = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000];
+	const frameTimeL = [16.67, 16.50, 16.81, 16.53, 15.0, 18.0, 20.1, 25.7, 25.0, 20.0, 30.0, 40.0];
+	const frameTimeP = [10, 20, 30, 30, 30, 40, 50, 60, 60, 60, 70, 80];
+	//if your tone mapping handles color channels separately
+
+	// Chart.js supports many types of charts and configuration options.
+	//   See: https://www.chartjs.org/docs/latest/
+	new Chart("A3-light-perf", {
+		type: "line",
+		data: {
+			labels: lights,
+			datasets: [
+				{ label: "lambertian", data: frameTimeL, backgroundColor:'#f00', borderColor:'#f00' },
+				{ label: "pbr", data: frameTimeP, backgroundColor:'#0f0', borderColor:'#0f0' },
+			]
+		},
+		options: {
+			plugins: {
+				title: { display: true, text: "Lighting Performance" }, //show a chart title
+				legend: { display: true, onClick:()=>{} }, //show legend but don't allow interacting
+			},
+			scales: {
+				y:{
+					min:0, //having y-axis start at zero provides better relative view of data
+					title: { display:true, text:"frame time (ms)" },
+				},
+				x:{
+					title: { display:true, text:"number of lights" },
+				},
+			},
+			animation:false, //don't animate in the data sets
+		}
+	});
+});
+</script>
+
+<h3>Adding Shadows for Spot Lights <span class="atag">A3-shadows</span></h3>
+
+<p class="placeholder">
+Cover, at least:
+how (and when) your viewer renders shadow maps;
+how your viewer works to avoid shadow map artifacts (e.g., rendering backfaces; using bias/offset; ...);
+how cube map textures are provided to materials;
+how many PCF samples your code takes and how it weights them.
+</p>
+
+
+<p class="placeholder">
+Include output images showing that spot light shadows are working correctly for both lambertian and pbr materials.
+</p>
+<p class="placeholder">
+Include output images showing that "shadow" light parameter does actually change the shadow map resolution.
+</p>
+
+<p class="placeholder">
+Include a graph showing the performance impact of adding shadowing to lights to a scene.
+Attempt to separate the performance impact of shadow map rendering and shadow map sampling (e.g., by testing the same scenes with per-frame rendered shadow maps and pre-rendered shadow maps). Which is larger?
+</p>
+
+
+
+<h3>Extra: Light Sort <span class="atag extra">A3x-sort</span></h3>
+
+<p class="placeholder">
+Cover, at least:
+your chosen method for sorting lights to meshes.
+</p>
+<p class="placeholder">
+Build a scene in which your light sorting technique provides a performance improvement over rendering all meshes with all lights.
+Include a screen shot (and the scene itself).
+</p>
+<p class="placeholder">
+Include data demonstrating the performance improvement in rendering this scene.
+E.g., a graph of the frame times for an animated fly-through of the scene with and without your sorting code enabled.
+</p>
+
+<h3>Extra: PCSS Soft Shadows <span class="atag extra">A3x-soft</span></h3>
+
+<p class="placeholder">
+Cover, at least:
+your implementation of PCSS (sampling pattern, counts)
+</p>
+
+<p class="placeholder">
+Include images showing the same shadows rendered with and without PCSS, showing the spreading behavior as the shadow stretches further from the light.
+</p>
+
+<h3>Extra: Shadows for Sun Lights <span class="atag extra">A3x-cascade</span></h3>
+
+<p class="placeholder">
+Cover, at least:
+your choice of shadow map cascade levels and layout;
+how your cascade is packed into a texture;
+how [if at all] your cascade avoids "boiling" as the camera moves
+</p>
+
+<p class="placeholder">
+Include images showing a scene rendered with a shadow-casting distant directional light.
+Include images with a modified shader color-coding pixels by what cascade level they are sampling.
+Include images from a debug camera, showing how the shadow map cascade fits the camera frustum.
+</p>
+
+<h3>Extra: Shadows for Sphere Lights <span class="atag extra">A3x-cube</span></h3>
+
+<p class="placeholder">
+Cover, at least:
+how you chose to set up cameras for cube map rendering
+</p>
+
+<p class="placeholder">
+Include images or video showing a scene rendered with a shadow-casting sphere light.
+Show that there are no artifacts at the edges or corners of the shadow map cube.
+</p>
+
+
+<h3>Extra: Other <span class="atag extra">A3x-*</span></h3>
+
+<p class="placeholder">
+If you have received instructor permission to pursue another extra credit activity, include information about that activity here.
+</p>
+
+
+
+<p class="placeholder">
+Include images or video showing a scene rendered with a shadow-casting sphere light.
+Show that there are no artifacts at the edges or corners of the shadow map cube.
+</p>
+
+
+
+<h2>Feedback</h2>
+<p class="placeholder">
+This is the end of the structured report. Feel free to add feedback about A1 to this section.
+</p>
+
+</body>
+</html>
