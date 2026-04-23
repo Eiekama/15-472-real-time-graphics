@@ -165,23 +165,26 @@ What's cool about it? Are there parts you weren't able to complete? -->
 
 <h2>My Model <span class="atag creative">A2-create</span></h2>
 
-<p class="placeholder">
-Describe the model and texture you created and include a screen recording showing it running in real-time:
+<p>
+The actual meshes are simply cubes. The indentation on the surface of the right cube is achieved through normal mapping.
 </p>
+<figure>
+	<video autoplay muted loop width="100%">
+	<source src="../model/model.mp4" type="video/mp4" />
+	</video>
+<figcaption>
+	Left: Cube. Right: Sci-fi Concept Art<br>
+	It's a, uh, <a href="https://knowyourmeme.com/photos/2504989-cube-vs-sci-fi-concept-art">meme</a>.
+</figcaption>
+</figure>
 
-<video>
-<!--
-  you can use the 'video' element to show your code running
-  Learn more at:
-    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
-
-  Example: put the video file in a path near this .html
-  <source src="path/to/video" type="video/mp4" />
--->
-</video>
-
-<p class="placeholder">
-Describe your creation process for the model and texture.
+<p>
+I created the high-poly model then baked the normal map to a low-poly cube in Blender following
+<a href="https://www.youtube.com/watch?v=Zxl38NpPWdo">this tutorial</a>. I also downloaded an environment map from
+<a href="https://polyhaven.com/a/ferndale_studio_12">Poly Haven</a>, however I needed to write a python helper to
+convert the dual-paraboloid format HDR image into a cubemap. There might have been error in the helper that caused the
+output cubemap to be too bright, but in the interest of time I decided to just temporarily divide the environment value
+in the shader by a constant to get a reasonable render.
 </p>
 
 <h2>Using the Cube Utility</h2>
