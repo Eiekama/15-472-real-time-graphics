@@ -1,0 +1,55 @@
+["s72-v2",
+{
+	"type":"MATERIAL",
+	"name":"pbr:white",
+	"pbr":{
+		"albedo":[ 0.8, 0.8, 0.8 ],
+		"roughness":0.5,
+		"metalness":0
+	}
+},
+{
+	"type":"MESH",
+	"name":"Cube",
+	"topology":"TRIANGLE_LIST",
+	"count":36,
+	"attributes":{
+		"POSITION":{ "src":"Cube.pnTt.b72", "offset":0, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"NORMAL":{ "src":"Cube.pnTt.b72", "offset":12, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"TANGENT":{ "src":"Cube.pnTt.b72", "offset":24, "stride":48, "format":"R32G32B32A32_SFLOAT" },
+		"TEXCOORD":{ "src":"Cube.pnTt.b72", "offset":40, "stride":48, "format":"R32G32_SFLOAT" }
+	},
+	"material":"pbr:white"
+},
+{
+	"type":"NODE",
+	"name":"Cube",
+	"translation":[0,0,0],
+	"rotation":[0,0,0,1],
+	"scale":[1,1,1],
+	"mesh":"Cube"
+},
+{
+
+	"type":"LIGHT",
+	"name":"Light",
+	"tint":[1, 1, 1],
+	"sphere":{
+		"radius":0.1,
+		"power":1000
+	}
+},
+{
+	"type":"NODE",
+	"name":"SphereLight",
+	"translation":[4.07625,1.00545,5.90386],
+	"rotation":[0.169076,0.272171,0.75588,0.570948],
+	"scale":[1,1,1],
+	"light":"Light"
+},
+{
+	"type":"SCENE",
+	"name":"../scenes/lights-performance.blend",
+	"roots":["Cube", "SphereLight"]
+}
+]

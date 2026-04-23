@@ -1,0 +1,1190 @@
+[
+    "s72-v2",
+    {
+        "type": "MATERIAL",
+        "name": "pbr:white",
+        "pbr": {
+            "albedo": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "roughness": 0.5,
+            "metalness": 0
+        }
+    },
+    {
+        "type": "MESH",
+        "name": "Cube",
+        "topology": "TRIANGLE_LIST",
+        "count": 36,
+        "attributes": {
+            "POSITION": {
+                "src": "Cube.pnTt.b72",
+                "offset": 0,
+                "stride": 48,
+                "format": "R32G32B32_SFLOAT"
+            },
+            "NORMAL": {
+                "src": "Cube.pnTt.b72",
+                "offset": 12,
+                "stride": 48,
+                "format": "R32G32B32_SFLOAT"
+            },
+            "TANGENT": {
+                "src": "Cube.pnTt.b72",
+                "offset": 24,
+                "stride": 48,
+                "format": "R32G32B32A32_SFLOAT"
+            },
+            "TEXCOORD": {
+                "src": "Cube.pnTt.b72",
+                "offset": 40,
+                "stride": 48,
+                "format": "R32G32_SFLOAT"
+            }
+        },
+        "material": "pbr:white"
+    },
+    {
+        "type": "NODE",
+        "name": "Cube",
+        "translation": [
+            0,
+            0,
+            0
+        ],
+        "rotation": [
+            0,
+            0,
+            0,
+            1
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "mesh": "Cube"
+    },
+    {
+        "type": "LIGHT",
+        "name": "Light",
+        "tint": [
+            1,
+            1,
+            1
+        ],
+        "sphere": {
+            "radius": 0.1,
+            "power": 1000
+        }
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "SCENE",
+        "name": "../scenes/lights-performance.blend",
+        "roots": [
+            "Cube",
+            "SphereLight",
+            "SphereLight_1",
+            "SphereLight_2",
+            "SphereLight_3",
+            "SphereLight_4",
+            "SphereLight_5",
+            "SphereLight_6",
+            "SphereLight_7",
+            "SphereLight_8",
+            "SphereLight_9",
+            "SphereLight_10",
+            "SphereLight_11",
+            "SphereLight_12",
+            "SphereLight_13",
+            "SphereLight_14",
+            "SphereLight_15",
+            "SphereLight_16",
+            "SphereLight_17",
+            "SphereLight_18",
+            "SphereLight_19",
+            "SphereLight_20",
+            "SphereLight_21",
+            "SphereLight_22",
+            "SphereLight_23",
+            "SphereLight_24",
+            "SphereLight_25",
+            "SphereLight_26",
+            "SphereLight_27",
+            "SphereLight_28",
+            "SphereLight_29",
+            "SphereLight_30",
+            "SphereLight_31",
+            "SphereLight_32",
+            "SphereLight_33",
+            "SphereLight_34",
+            "SphereLight_35",
+            "SphereLight_36",
+            "SphereLight_37",
+            "SphereLight_38",
+            "SphereLight_39",
+            "SphereLight_40",
+            "SphereLight_41",
+            "SphereLight_42",
+            "SphereLight_43",
+            "SphereLight_44",
+            "SphereLight_45",
+            "SphereLight_46",
+            "SphereLight_47",
+            "SphereLight_48",
+            "SphereLight_49"
+        ]
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_1",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_2",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_3",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_4",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_5",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_6",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_7",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_8",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_9",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_10",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_11",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_12",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_13",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_14",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_15",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_16",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_17",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_18",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_19",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_20",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_21",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_22",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_23",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_24",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_25",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_26",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_27",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_28",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_29",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_30",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_31",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_32",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_33",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_34",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_35",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_36",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_37",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_38",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_39",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_40",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_41",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_42",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_43",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_44",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_45",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_46",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_47",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_48",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SphereLight_49",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    }
+]

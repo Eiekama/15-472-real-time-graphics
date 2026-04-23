@@ -1,0 +1,4492 @@
+[
+    "s72-v2",
+    {
+        "type": "MATERIAL",
+        "name": "pbr:white",
+        "pbr": {
+            "albedo": [
+                0.8,
+                0.8,
+                0.8
+            ],
+            "roughness": 0.5,
+            "metalness": 0
+        }
+    },
+    {
+        "type": "MESH",
+        "name": "Cube",
+        "topology": "TRIANGLE_LIST",
+        "count": 36,
+        "attributes": {
+            "POSITION": {
+                "src": "Cube.pnTt.b72",
+                "offset": 0,
+                "stride": 48,
+                "format": "R32G32B32_SFLOAT"
+            },
+            "NORMAL": {
+                "src": "Cube.pnTt.b72",
+                "offset": 12,
+                "stride": 48,
+                "format": "R32G32B32_SFLOAT"
+            },
+            "TANGENT": {
+                "src": "Cube.pnTt.b72",
+                "offset": 24,
+                "stride": 48,
+                "format": "R32G32B32A32_SFLOAT"
+            },
+            "TEXCOORD": {
+                "src": "Cube.pnTt.b72",
+                "offset": 40,
+                "stride": 48,
+                "format": "R32G32_SFLOAT"
+            }
+        },
+        "material": "pbr:white"
+    },
+    {
+        "type": "NODE",
+        "name": "Cube",
+        "translation": [
+            0,
+            0,
+            0
+        ],
+        "rotation": [
+            0,
+            0,
+            0,
+            1
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "mesh": "Cube"
+    },
+    {
+        "type": "LIGHT",
+        "name": "Light",
+        "tint": [
+            1,
+            1,
+            1
+        ],
+        "spot": {
+            "radius": 0.1,
+            "power": 1000,
+            "fov": 1.309,
+            "blend": 0.15
+        }
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "SCENE",
+        "name": "../scenes/lights-performance.blend",
+        "roots": [
+            "Cube",
+            "SpotLight",
+            "SpotLight_1",
+            "SpotLight_2",
+            "SpotLight_3",
+            "SpotLight_4",
+            "SpotLight_5",
+            "SpotLight_6",
+            "SpotLight_7",
+            "SpotLight_8",
+            "SpotLight_9",
+            "SpotLight_10",
+            "SpotLight_11",
+            "SpotLight_12",
+            "SpotLight_13",
+            "SpotLight_14",
+            "SpotLight_15",
+            "SpotLight_16",
+            "SpotLight_17",
+            "SpotLight_18",
+            "SpotLight_19",
+            "SpotLight_20",
+            "SpotLight_21",
+            "SpotLight_22",
+            "SpotLight_23",
+            "SpotLight_24",
+            "SpotLight_25",
+            "SpotLight_26",
+            "SpotLight_27",
+            "SpotLight_28",
+            "SpotLight_29",
+            "SpotLight_30",
+            "SpotLight_31",
+            "SpotLight_32",
+            "SpotLight_33",
+            "SpotLight_34",
+            "SpotLight_35",
+            "SpotLight_36",
+            "SpotLight_37",
+            "SpotLight_38",
+            "SpotLight_39",
+            "SpotLight_40",
+            "SpotLight_41",
+            "SpotLight_42",
+            "SpotLight_43",
+            "SpotLight_44",
+            "SpotLight_45",
+            "SpotLight_46",
+            "SpotLight_47",
+            "SpotLight_48",
+            "SpotLight_49",
+            "SpotLight_50",
+            "SpotLight_51",
+            "SpotLight_52",
+            "SpotLight_53",
+            "SpotLight_54",
+            "SpotLight_55",
+            "SpotLight_56",
+            "SpotLight_57",
+            "SpotLight_58",
+            "SpotLight_59",
+            "SpotLight_60",
+            "SpotLight_61",
+            "SpotLight_62",
+            "SpotLight_63",
+            "SpotLight_64",
+            "SpotLight_65",
+            "SpotLight_66",
+            "SpotLight_67",
+            "SpotLight_68",
+            "SpotLight_69",
+            "SpotLight_70",
+            "SpotLight_71",
+            "SpotLight_72",
+            "SpotLight_73",
+            "SpotLight_74",
+            "SpotLight_75",
+            "SpotLight_76",
+            "SpotLight_77",
+            "SpotLight_78",
+            "SpotLight_79",
+            "SpotLight_80",
+            "SpotLight_81",
+            "SpotLight_82",
+            "SpotLight_83",
+            "SpotLight_84",
+            "SpotLight_85",
+            "SpotLight_86",
+            "SpotLight_87",
+            "SpotLight_88",
+            "SpotLight_89",
+            "SpotLight_90",
+            "SpotLight_91",
+            "SpotLight_92",
+            "SpotLight_93",
+            "SpotLight_94",
+            "SpotLight_95",
+            "SpotLight_96",
+            "SpotLight_97",
+            "SpotLight_98",
+            "SpotLight_99",
+            "SpotLight_100",
+            "SpotLight_101",
+            "SpotLight_102",
+            "SpotLight_103",
+            "SpotLight_104",
+            "SpotLight_105",
+            "SpotLight_106",
+            "SpotLight_107",
+            "SpotLight_108",
+            "SpotLight_109",
+            "SpotLight_110",
+            "SpotLight_111",
+            "SpotLight_112",
+            "SpotLight_113",
+            "SpotLight_114",
+            "SpotLight_115",
+            "SpotLight_116",
+            "SpotLight_117",
+            "SpotLight_118",
+            "SpotLight_119",
+            "SpotLight_120",
+            "SpotLight_121",
+            "SpotLight_122",
+            "SpotLight_123",
+            "SpotLight_124",
+            "SpotLight_125",
+            "SpotLight_126",
+            "SpotLight_127",
+            "SpotLight_128",
+            "SpotLight_129",
+            "SpotLight_130",
+            "SpotLight_131",
+            "SpotLight_132",
+            "SpotLight_133",
+            "SpotLight_134",
+            "SpotLight_135",
+            "SpotLight_136",
+            "SpotLight_137",
+            "SpotLight_138",
+            "SpotLight_139",
+            "SpotLight_140",
+            "SpotLight_141",
+            "SpotLight_142",
+            "SpotLight_143",
+            "SpotLight_144",
+            "SpotLight_145",
+            "SpotLight_146",
+            "SpotLight_147",
+            "SpotLight_148",
+            "SpotLight_149",
+            "SpotLight_150",
+            "SpotLight_151",
+            "SpotLight_152",
+            "SpotLight_153",
+            "SpotLight_154",
+            "SpotLight_155",
+            "SpotLight_156",
+            "SpotLight_157",
+            "SpotLight_158",
+            "SpotLight_159",
+            "SpotLight_160",
+            "SpotLight_161",
+            "SpotLight_162",
+            "SpotLight_163",
+            "SpotLight_164",
+            "SpotLight_165",
+            "SpotLight_166",
+            "SpotLight_167",
+            "SpotLight_168",
+            "SpotLight_169",
+            "SpotLight_170",
+            "SpotLight_171",
+            "SpotLight_172",
+            "SpotLight_173",
+            "SpotLight_174",
+            "SpotLight_175",
+            "SpotLight_176",
+            "SpotLight_177",
+            "SpotLight_178",
+            "SpotLight_179",
+            "SpotLight_180",
+            "SpotLight_181",
+            "SpotLight_182",
+            "SpotLight_183",
+            "SpotLight_184",
+            "SpotLight_185",
+            "SpotLight_186",
+            "SpotLight_187",
+            "SpotLight_188",
+            "SpotLight_189",
+            "SpotLight_190",
+            "SpotLight_191",
+            "SpotLight_192",
+            "SpotLight_193",
+            "SpotLight_194",
+            "SpotLight_195",
+            "SpotLight_196",
+            "SpotLight_197",
+            "SpotLight_198",
+            "SpotLight_199"
+        ]
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_1",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_2",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_3",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_4",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_5",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_6",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_7",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_8",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_9",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_10",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_11",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_12",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_13",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_14",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_15",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_16",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_17",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_18",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_19",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_20",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_21",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_22",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_23",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_24",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_25",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_26",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_27",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_28",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_29",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_30",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_31",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_32",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_33",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_34",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_35",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_36",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_37",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_38",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_39",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_40",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_41",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_42",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_43",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_44",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_45",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_46",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_47",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_48",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_49",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_50",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_51",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_52",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_53",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_54",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_55",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_56",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_57",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_58",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_59",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_60",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_61",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_62",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_63",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_64",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_65",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_66",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_67",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_68",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_69",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_70",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_71",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_72",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_73",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_74",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_75",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_76",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_77",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_78",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_79",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_80",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_81",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_82",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_83",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_84",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_85",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_86",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_87",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_88",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_89",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_90",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_91",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_92",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_93",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_94",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_95",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_96",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_97",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_98",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_99",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_100",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_101",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_102",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_103",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_104",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_105",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_106",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_107",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_108",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_109",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_110",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_111",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_112",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_113",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_114",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_115",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_116",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_117",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_118",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_119",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_120",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_121",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_122",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_123",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_124",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_125",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_126",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_127",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_128",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_129",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_130",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_131",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_132",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_133",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_134",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_135",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_136",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_137",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_138",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_139",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_140",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_141",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_142",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_143",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_144",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_145",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_146",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_147",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_148",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_149",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_150",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_151",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_152",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_153",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_154",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_155",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_156",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_157",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_158",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_159",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_160",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_161",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_162",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_163",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_164",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_165",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_166",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_167",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_168",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_169",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_170",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_171",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_172",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_173",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_174",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_175",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_176",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_177",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_178",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_179",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_180",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_181",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_182",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_183",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_184",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_185",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_186",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_187",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_188",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_189",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_190",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_191",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_192",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_193",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_194",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_195",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_196",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_197",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_198",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    },
+    {
+        "type": "NODE",
+        "name": "SpotLight_199",
+        "translation": [
+            4.07625,
+            1.00545,
+            5.90386
+        ],
+        "rotation": [
+            0.169076,
+            0.272171,
+            0.75588,
+            0.570948
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "light": "Light"
+    }
+]
