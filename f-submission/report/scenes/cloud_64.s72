@@ -1,0 +1,668 @@
+["s72-v2",
+{
+	"type":"MATERIAL",
+	"name":"cloud",
+	"cloud":{}
+},
+{
+	"type":"MESH",
+	"name":"Sphere",
+	"topology":"TRIANGLE_LIST",
+	"count":240,
+	"attributes":{
+		"POSITION":{ "src":"cloud.Sphere.pnTt.b72", "offset":0, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"NORMAL":{ "src":"cloud.Sphere.pnTt.b72", "offset":12, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"TANGENT":{ "src":"cloud.Sphere.pnTt.b72", "offset":24, "stride":48, "format":"R32G32B32A32_SFLOAT" },
+		"TEXCOORD":{ "src":"cloud.Sphere.pnTt.b72", "offset":40, "stride":48, "format":"R32G32_SFLOAT" }
+	},
+	"material":"cloud"
+},
+{
+	"type":"NODE",
+	"name":"Cube",
+	"translation":[-2.06654e-16,-0.218985,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+
+	"type":"LIGHT",
+	"name":"Light",
+	"tint":[1, 0.876489, 0.50749],
+	"sun":{
+		"angle":0.199337,
+		"strength":10
+	}
+},
+{
+	"type":"NODE",
+	"name":"Light",
+	"translation":[4.07625,1.00545,5.90386],
+	"rotation":[0.169076,0.272171,0.75588,0.570948],
+	"scale":[1,1,1],
+	"light":"Light"
+},
+{
+
+	"type":"CAMERA",
+	"name":"Camera",
+	"perspective":{
+		"aspect":1.77778,
+		"vfov":0.47109,
+		"near":0.1,
+		"far":100
+	}
+},
+{
+	"type":"NODE",
+	"name":"Camera",
+	"translation":[19.0447,0.878581,8.93639],
+	"rotation":[0.404001,0.409682,0.582359,0.574283],
+	"scale":[1,1,1],
+	"camera":"Camera"
+},
+{
+	"type":"NODE",
+	"name":"Cube.001",
+	"translation":[-2.32341,-2.93547,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.002",
+	"translation":[-2.69314,3.7585,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.003",
+	"translation":[-4.77973,2.44599,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"MATERIAL",
+	"name":"lambertian:grey",
+	"lambertian":{
+		"albedo":[ 0.442588, 0.442588, 0.442588 ]
+	}
+},
+{
+	"type":"MESH",
+	"name":"Cube.001",
+	"topology":"TRIANGLE_LIST",
+	"count":36,
+	"attributes":{
+		"POSITION":{ "src":"cloud.Cube.001.pnTt.b72", "offset":0, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"NORMAL":{ "src":"cloud.Cube.001.pnTt.b72", "offset":12, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"TANGENT":{ "src":"cloud.Cube.001.pnTt.b72", "offset":24, "stride":48, "format":"R32G32B32A32_SFLOAT" },
+		"TEXCOORD":{ "src":"cloud.Cube.001.pnTt.b72", "offset":40, "stride":48, "format":"R32G32_SFLOAT" }
+	},
+	"material":"lambertian:grey"
+},
+{
+	"type":"NODE",
+	"name":"Cube.004",
+	"translation":[6.00483,-1.94068,0.840085],
+	"rotation":[-0.292277,-0.0040815,-0.104938,0.95055],
+	"scale":[1,1.5867,1.5867],
+	"mesh":"Cube.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.005",
+	"translation":[-1.70448,1.2952,0.15792],
+	"rotation":[-0.110527,0.0391088,-0.0262678,0.992756],
+	"scale":[1,1.5867,1.61792],
+	"mesh":"Cube.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.006",
+	"translation":[-8.5073,3.53299,-0.999463],
+	"rotation":[0,-0.186749,0,0.982408],
+	"scale":[1.03757,1.63929,7.94947],
+	"mesh":"Cube.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.007",
+	"translation":[-7.34236,-8.09859,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.008",
+	"translation":[-9.66577,-10.8151,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.009",
+	"translation":[-10.0355,-4.12111,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.010",
+	"translation":[-12.1221,-5.43362,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.011",
+	"translation":[-6.80512,9.72007,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.012",
+	"translation":[-9.12852,7.00359,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.013",
+	"translation":[-9.49826,13.6975,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.014",
+	"translation":[-11.5849,12.385,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.015",
+	"translation":[-14.1475,1.84046,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.016",
+	"translation":[-16.4709,-0.876021,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.017",
+	"translation":[-16.8406,5.81794,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.018",
+	"translation":[-18.9272,4.50543,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.019",
+	"translation":[-17.2814,-10.9639,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.020",
+	"translation":[-19.6048,-13.6804,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.021",
+	"translation":[-19.9746,-6.98643,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.022",
+	"translation":[-22.0612,-8.29894,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.023",
+	"translation":[-27.4851,4.54307,-0.930685],
+	"rotation":[0,0,-0.66058,0.750756],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.024",
+	"translation":[-30.4752,6.50187,0],
+	"rotation":[0,0,-0.329972,0.943991],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.025",
+	"translation":[-23.8827,7.72052,-2.1351],
+	"rotation":[0,0,-0.329972,0.943991],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.026",
+	"translation":[-25.4501,9.62311,2.60044],
+	"rotation":[0.201204,-0.177037,-0.636415,0.723292],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.027",
+	"translation":[-24.0865,-1.02485,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.028",
+	"translation":[-26.4099,-3.74133,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.029",
+	"translation":[-26.7797,2.95263,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.030",
+	"translation":[-28.8663,1.64012,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.031",
+	"translation":[-18.4929,12.5578,-0.930685],
+	"rotation":[0,0,-0.66058,0.750756],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.032",
+	"translation":[-21.483,14.5166,0],
+	"rotation":[0,0,-0.329972,0.943991],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.033",
+	"translation":[-14.8905,15.7352,-2.1351],
+	"rotation":[0,0,-0.329972,0.943991],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.034",
+	"translation":[-16.4579,17.6378,2.60044],
+	"rotation":[0.201204,-0.177037,-0.636415,0.723292],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"MESH",
+	"name":"Sphere.001",
+	"topology":"TRIANGLE_LIST",
+	"count":240,
+	"attributes":{
+		"POSITION":{ "src":"cloud.Sphere.001.pnTt.b72", "offset":0, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"NORMAL":{ "src":"cloud.Sphere.001.pnTt.b72", "offset":12, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"TANGENT":{ "src":"cloud.Sphere.001.pnTt.b72", "offset":24, "stride":48, "format":"R32G32B32A32_SFLOAT" },
+		"TEXCOORD":{ "src":"cloud.Sphere.001.pnTt.b72", "offset":40, "stride":48, "format":"R32G32_SFLOAT" }
+	},
+	"material":"cloud"
+},
+{
+	"type":"NODE",
+	"name":"Cube.035",
+	"translation":[-29.3695,-8.27768,-15.4035],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere.001"
+},
+{
+
+	"type":"LIGHT",
+	"name":"Light.001",
+	"tint":[1, 0.876489, 0.50749],
+	"sun":{
+		"angle":0.199337,
+		"strength":10
+	}
+},
+{
+	"type":"NODE",
+	"name":"Light.001",
+	"translation":[-25.2932,-7.05324,-8.56897],
+	"rotation":[0.169076,0.272171,0.75588,0.570948],
+	"scale":[1,1,1],
+	"light":"Light.001"
+},
+{
+
+	"type":"CAMERA",
+	"name":"Camera.001",
+	"perspective":{
+		"aspect":1.77778,
+		"vfov":0.47109,
+		"near":0.1,
+		"far":100
+	}
+},
+{
+	"type":"NODE",
+	"name":"Camera.001",
+	"translation":[-10.3247,-7.18011,-5.53644],
+	"rotation":[0.404001,0.409682,0.582359,0.574283],
+	"scale":[1,1,1],
+	"camera":"Camera.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.036",
+	"translation":[-31.6929,-10.9942,-14.4728],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.037",
+	"translation":[-32.0626,-4.3002,-16.6079],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.038",
+	"translation":[-34.1492,-5.61271,-11.8724],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.039",
+	"translation":[-36.7118,-16.1573,-15.4035],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.040",
+	"translation":[-39.0352,-18.8738,-14.4728],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.041",
+	"translation":[-39.405,-12.1798,-16.6079],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.042",
+	"translation":[-41.4916,-13.4923,-11.8724],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.043",
+	"translation":[-36.1746,1.66138,-15.4035],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.044",
+	"translation":[-38.498,-1.0551,-14.4728],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.045",
+	"translation":[-38.8677,5.63886,-16.6079],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.046",
+	"translation":[-40.9543,4.32635,-11.8724],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.047",
+	"translation":[-43.5169,-6.21823,-15.4035],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.048",
+	"translation":[-45.8403,-8.93471,-14.4728],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.049",
+	"translation":[-46.2101,-2.24075,-16.6079],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.050",
+	"translation":[-48.2967,-3.55326,-11.8724],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.051",
+	"translation":[-46.6509,-19.0226,-15.4035],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.052",
+	"translation":[-48.9743,-21.7391,-14.4728],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.053",
+	"translation":[-49.344,-15.0451,-16.6079],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.054",
+	"translation":[-51.4306,-16.3576,-11.8724],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.055",
+	"translation":[-56.8545,-3.51562,-15.4035],
+	"rotation":[0,0,-0.66058,0.750756],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.056",
+	"translation":[-59.8446,-1.55682,-14.4728],
+	"rotation":[0,0,-0.329972,0.943991],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.057",
+	"translation":[-53.2521,-0.338171,-16.6079],
+	"rotation":[0,0,-0.329972,0.943991],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.058",
+	"translation":[-54.8195,1.56441,-11.8724],
+	"rotation":[0.201204,-0.177037,-0.636415,0.723292],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.059",
+	"translation":[-53.456,-9.08355,-15.4035],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.060",
+	"translation":[-55.7794,-11.8,-14.4728],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.061",
+	"translation":[-56.1491,-5.10607,-16.6079],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.062",
+	"translation":[-58.2357,-6.41857,-11.8724],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.063",
+	"translation":[-47.8624,4.49908,-15.4035],
+	"rotation":[0,0,-0.66058,0.750756],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.064",
+	"translation":[-50.8525,6.45788,-14.4728],
+	"rotation":[0,0,-0.329972,0.943991],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.065",
+	"translation":[-44.26,7.67653,-16.6079],
+	"rotation":[0,0,-0.329972,0.943991],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.066",
+	"translation":[-45.8274,9.57912,-11.8724],
+	"rotation":[0.201204,-0.177037,-0.636415,0.723292],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere.001"
+},
+{
+	"type":"SCENE",
+	"name":"../scenes/sources/cloud.blend",
+	"roots":["Cube", "Light", "Camera", "Cube.001", "Cube.002", "Cube.003", "Cube.004", "Cube.005", "Cube.006", "Cube.007", "Cube.008", "Cube.009", "Cube.010", "Cube.011", "Cube.012", "Cube.013", "Cube.014", "Cube.015", "Cube.016", "Cube.017", "Cube.018", "Cube.019", "Cube.020", "Cube.021", "Cube.022", "Cube.023", "Cube.024", "Cube.025", "Cube.026", "Cube.027", "Cube.028", "Cube.029", "Cube.030", "Cube.031", "Cube.032", "Cube.033", "Cube.034", "Cube.035", "Light.001", "Camera.001", "Cube.036", "Cube.037", "Cube.038", "Cube.039", "Cube.040", "Cube.041", "Cube.042", "Cube.043", "Cube.044", "Cube.045", "Cube.046", "Cube.047", "Cube.048", "Cube.049", "Cube.050", "Cube.051", "Cube.052", "Cube.053", "Cube.054", "Cube.055", "Cube.056", "Cube.057", "Cube.058", "Cube.059", "Cube.060", "Cube.061", "Cube.062", "Cube.063", "Cube.064", "Cube.065", "Cube.066"]
+}
+]

@@ -1,0 +1,234 @@
+["s72-v2",
+{
+	"type":"MATERIAL",
+	"name":"cloud",
+	"cloud":{}
+},
+{
+	"type":"MESH",
+	"name":"Sphere",
+	"topology":"TRIANGLE_LIST",
+	"count":240,
+	"attributes":{
+		"POSITION":{ "src":"cloud.Sphere.pnTt.b72", "offset":0, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"NORMAL":{ "src":"cloud.Sphere.pnTt.b72", "offset":12, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"TANGENT":{ "src":"cloud.Sphere.pnTt.b72", "offset":24, "stride":48, "format":"R32G32B32A32_SFLOAT" },
+		"TEXCOORD":{ "src":"cloud.Sphere.pnTt.b72", "offset":40, "stride":48, "format":"R32G32_SFLOAT" }
+	},
+	"material":"cloud"
+},
+{
+	"type":"NODE",
+	"name":"Cube",
+	"translation":[-2.06654e-16,-0.218985,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+
+	"type":"LIGHT",
+	"name":"Light",
+	"tint":[1, 0.876489, 0.50749],
+	"sun":{
+		"angle":0.199337,
+		"strength":10
+	}
+},
+{
+	"type":"NODE",
+	"name":"Light",
+	"translation":[4.07625,1.00545,5.90386],
+	"rotation":[0.169076,0.272171,0.75588,0.570948],
+	"scale":[1,1,1],
+	"light":"Light"
+},
+{
+
+	"type":"CAMERA",
+	"name":"Camera",
+	"perspective":{
+		"aspect":1.77778,
+		"vfov":0.47109,
+		"near":0.1,
+		"far":100
+	}
+},
+{
+	"type":"NODE",
+	"name":"Camera",
+	"translation":[19.0447,0.878581,8.93639],
+	"rotation":[0.404001,0.409682,0.582359,0.574283],
+	"scale":[1,1,1],
+	"camera":"Camera"
+},
+{
+	"type":"NODE",
+	"name":"Cube.001",
+	"translation":[-2.32341,-2.93547,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.002",
+	"translation":[-2.69314,3.7585,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.003",
+	"translation":[-4.77973,2.44599,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"MATERIAL",
+	"name":"lambertian:grey",
+	"lambertian":{
+		"albedo":[ 0.442588, 0.442588, 0.442588 ]
+	}
+},
+{
+	"type":"MESH",
+	"name":"Cube.001",
+	"topology":"TRIANGLE_LIST",
+	"count":36,
+	"attributes":{
+		"POSITION":{ "src":"cloud.Cube.001.pnTt.b72", "offset":0, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"NORMAL":{ "src":"cloud.Cube.001.pnTt.b72", "offset":12, "stride":48, "format":"R32G32B32_SFLOAT" },
+		"TANGENT":{ "src":"cloud.Cube.001.pnTt.b72", "offset":24, "stride":48, "format":"R32G32B32A32_SFLOAT" },
+		"TEXCOORD":{ "src":"cloud.Cube.001.pnTt.b72", "offset":40, "stride":48, "format":"R32G32_SFLOAT" }
+	},
+	"material":"lambertian:grey"
+},
+{
+	"type":"NODE",
+	"name":"Cube.004",
+	"translation":[6.00483,-1.94068,0.840085],
+	"rotation":[-0.292277,-0.0040815,-0.104938,0.95055],
+	"scale":[1,1.5867,1.5867],
+	"mesh":"Cube.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.005",
+	"translation":[-1.70448,1.2952,0.15792],
+	"rotation":[-0.110527,0.0391088,-0.0262678,0.992756],
+	"scale":[1,1.5867,1.61792],
+	"mesh":"Cube.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.006",
+	"translation":[-8.5073,3.53299,-0.999463],
+	"rotation":[0,-0.186749,0,0.982408],
+	"scale":[1.03757,1.63929,7.94947],
+	"mesh":"Cube.001"
+},
+{
+	"type":"NODE",
+	"name":"Cube.007",
+	"translation":[-7.34236,-8.09859,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.008",
+	"translation":[-9.66577,-10.8151,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.009",
+	"translation":[-10.0355,-4.12111,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.010",
+	"translation":[-12.1221,-5.43362,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.011",
+	"translation":[-6.80512,9.72007,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.012",
+	"translation":[-9.12852,7.00359,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.013",
+	"translation":[-9.49826,13.6975,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.014",
+	"translation":[-11.5849,12.385,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.015",
+	"translation":[-14.1475,1.84046,-0.930685],
+	"rotation":[0,0,0,1],
+	"scale":[1.68832,1.68832,1.68832],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.016",
+	"translation":[-16.4709,-0.876021,0],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[2.37377,2.37377,2.37377],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.017",
+	"translation":[-16.8406,5.81794,-2.1351],
+	"rotation":[0,0,0.375853,0.926679],
+	"scale":[3.79987,1.68307,1.68307],
+	"mesh":"Sphere"
+},
+{
+	"type":"NODE",
+	"name":"Cube.018",
+	"translation":[-18.9272,4.50543,2.60044],
+	"rotation":[0.268003,5.95085e-17,1.71718e-24,0.963418],
+	"scale":[3.63056,3.63056,3.63056],
+	"mesh":"Sphere"
+},
+{
+	"type":"SCENE",
+	"name":"../scenes/sources/cloud.blend",
+	"roots":["Cube", "Light", "Camera", "Cube.001", "Cube.002", "Cube.003", "Cube.004", "Cube.005", "Cube.006", "Cube.007", "Cube.008", "Cube.009", "Cube.010", "Cube.011", "Cube.012", "Cube.013", "Cube.014", "Cube.015", "Cube.016", "Cube.017", "Cube.018"]
+}
+]
